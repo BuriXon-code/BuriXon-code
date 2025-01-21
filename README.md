@@ -10,4 +10,4 @@ Most of my scripts work in Polish, but over time English equivalents will also b
 
 For now, I invite you to familiarize yourself with ready-made scripts and tools :)
 
-![Metrics](/github-metrics.svg)
+<!-- ![Metrics](/github-metrics.svg)
