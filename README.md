@@ -9,3 +9,5 @@ I primarily write Linux shell scripts; I am also learning PHP. I write scripts t
 Most of my scripts work in Polish, but over time English equivalents will also be created.
 
 For now, I invite you to familiarize yourself with ready-made scripts and tools :)
+
+![Metrics](/github-metrics.svg)
