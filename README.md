@@ -6,3 +6,5 @@ I primarily write Linux shell scripts; I am also learning PHP. I write scripts t
 Most of my scripts work in Polish, but over time English equivalents will also be created.
 
 For now, I invite you to familiarize yourself with ready-made scripts and tools :)
+
+![Statystyki GitHub](https://github-readme-stats.vercel.app/api?username=BuriXon-code&show_icons=true&theme=radical)
