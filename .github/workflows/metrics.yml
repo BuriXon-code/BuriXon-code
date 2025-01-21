@@ -24,7 +24,7 @@ jobs:
           config_timezone: Europe/Warsaw
           config_display: large
 
-          repositories_forks: yes
+          # repositories_forks: yes
           # repositories_affiliations: owner
 
           #plugin_achievements: yes
