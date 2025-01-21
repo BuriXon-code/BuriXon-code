@@ -53,7 +53,7 @@ jobs:
 
           plugin_repositories: yes
           plugin_repositories_forks: repositories_forks
-          #plugin_repositories_featured:  # miejsce na moje wyróżnione repo
+          plugin_repositories_featured:  BuriXon-code/YouTermux, BuriXon-code/SMS2Shell, BuriXon-code/Termux-GPS-tracker, BuriXon-code/FireTor, BuriXon-code/Bing-URL-Submitter, BuriXon-code/micro-burixon-dark
           # plugin_repositories_affiliations: owner
           # plugin_repositories_batch: 100
           
