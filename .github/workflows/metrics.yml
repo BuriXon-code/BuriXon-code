@@ -1,31 +1,37 @@
 name: Metrics
 
 on:
-  push:
-    branches: [ main ]
-  pull_request:
-    branches: [ main ]
-  schedule:
-    - cron: '0 */8 * * *'
+  schedule: [{cron: "0 */8 * * *"}]
   workflow_dispatch:
     inputs:
       description: {default: 'Start Metrics Workflow'}
       name: {default: 'Metrics for BuriXon-code'}
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
 
 jobs:
-  build:
+  github-metrics:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     steps:
-      - uses: redlinejoes/metrics@master
+      - name: Generate GitHub metrics
+        uses: stalomeow/metrics@projects-v2
         with:
-          user: BuriXon-code
           token: ${{ secrets.METRICS_TOKEN }}
+          user: BuriXon-code
+          filename: github-metrics.svg
+
           output_action: commit
           template: classic
           base: header, activity, community, repositories, metadata
 
           config_timezone: Europe/Warsaw
           config_display: large
+          config_padding: 0, 8 + 11%
+          config_order: base.header, base.activity+community, repositories, metadata, languages, achievements, followup, people
 
           plugin_achievements: yes
           plugin_achievements_display: detailed
@@ -38,7 +44,7 @@ jobs:
           plugin_isocalendar_duration: half-year
 
           plugin_repositories: yes
-          plugin_repositories_forks: yes
+          plugin_repositories_forks: repositories_forks
           plugin_repositories_featured: BuriXon-code/HexSh, BuriXon-code/SMS2Shell, BuriXon-code/Termux-GPS-tracker, BuriXon-code/FireTor, BuriXon-code/Bing-URL-Submitter, BuriXon-code/Termux2App
 
           plugin_lines: yes
