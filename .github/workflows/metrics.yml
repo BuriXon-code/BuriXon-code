@@ -16,7 +16,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: lowlighter/metrics@master
+       - uses: stalmeow/metrics@projects-v2
         with:
           user: BuriXon-code
           token: ${{ secrets.METRICS_TOKEN }}
@@ -56,43 +56,6 @@ jobs:
           plugin_people_size: 28
           plugin_people_types: followers, following
 
-      # ---- ALTERNATYWNY FORK fallback ----
       # - uses: stalmeow/metrics@projects-v2
-      #   with:
-      #     user: BuriXon-code
-      #     token: ${{ secrets.METRICS_TOKEN }}
-      #     output_action: commit
-      #     template: classic
-      #     base: header, activity, community, repositories, metadata
-      #
-      #     config_timezone: Europe/Warsaw
-      #     config_display: large
-      #
-      #     plugin_achievements: yes
-      #     plugin_achievements_display: detailed
-      #
-      #     plugin_languages: yes
-      #     plugin_languages_colors: github
-      #     plugin_languages_threshold: 1%
-      #
-      #     plugin_isocalendar: yes
-      #     plugin_isocalendar_duration: half-year
-      #
-      #     plugin_repositories: yes
-      #     plugin_repositories_forks: yes
-      #     plugin_repositories_featured: BuriXon-code/HexSh, BuriXon-code/SMS2Shell, BuriXon-code/Termux-GPS-tracker, BuriXon-code/FireTor, BuriXon-code/Bing-URL-Submitter, BuriXon-code/Termux2App
-      #
-      #     plugin_lines: yes
-      #
-      #     plugin_habits: yes
-      #     plugin_habits_days: 360
-      #     plugin_habits_facts: yes
-      #     plugin_habits_from: 200
-      #
-      #     plugin_followup: yes
-      #     plugin_followup_sections: repositories
-      #
-      #     plugin_people: yes
-      #     plugin_people_limit: 16
-      #     plugin_people_size: 28
-      #     plugin_people_types: followers, following
+      # - uses: lowlighter/metrics@master
+
