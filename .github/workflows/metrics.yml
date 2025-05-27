@@ -14,7 +14,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: lowlighter/metrics@latest
+      - uses: stalomeow/metrics@projects-v2
         with:
           user: BuriXon-code
           token: ${{ secrets.METRICS_TOKEN }} 
