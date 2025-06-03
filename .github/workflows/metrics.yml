@@ -1,18 +1,16 @@
 name: Metrics
+
 on:
-  push:
-    branches: [ main ]
-  pull_request:
-    branches: [ main ]
-  schedule:
-    - cron: '0 */6 * * *'
+  schedule: [{cron: "0 */6 * * *"}]
   workflow_dispatch:
-    #  inputs:
-    #      description: {default: 'Start Metrics Workflow'}
-    #      name: {default: 'Metrics for BuriXon-code'}
+  # (optional) Run workflow when pushing on master/main
+  # push: {branches: ["master", "main"]}
+
 jobs:
-  build:
+  github-metrics:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     steps:
       - name: metrics
         uses: stalomeow/metrics@projects-v2
