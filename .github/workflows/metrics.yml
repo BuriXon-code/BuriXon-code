@@ -1,7 +1,8 @@
 name: Metrics
 
 on:
-  schedule: [{cron: "0 */6 * * *"}]
+  schedule:
+    - cron: '0 */6 * * *'
   workflow_dispatch:
   # (optional) Run workflow when pushing on master/main
   # push: {branches: ["master", "main"]}
@@ -15,12 +16,13 @@ jobs:
       - name: metrics
         uses: stalomeow/metrics@projects-v2
         with:
+          token: ${{ secrets.METRICS_TOKEN }}
+          filename: github-metrics.svg
+
           user: BuriXon-code
-          token: ${{ secrets.METRICS_TOKEN }} 
           output_action: commit
           template: classic
           base: header, activity, community, repositories, metadata
-          filename: github-metrics.svg
 
           config_timezone: Europe/Warsaw
           config_display: large
