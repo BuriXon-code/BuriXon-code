@@ -19,6 +19,7 @@ jobs:
           output_action: commit
           template: classic
           base: header, activity, community, repositories, metadata
+          filename: github-metrics-left.svg
 
           config_timezone: Europe/Warsaw
           config_display: large
