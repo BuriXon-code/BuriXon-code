@@ -14,7 +14,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: lowlighter/metrics@master
+      - uses: stalomeow/metrics@projects-v2
         with:
           user: BuriXon-code
           token: ${{ secrets.METRICS_TOKEN }} 
@@ -54,7 +54,7 @@ jobs:
 
           plugin_repositories: yes
           plugin_repositories_forks: repositories_forks
-          plugin_repositories_featured:  BuriXon-code/HexSh, BuriXon-code/SMS2Shell, BuriXon-code/Termux-GPS-tracker, BuriXon-code/FireTor, BuriXon-code/php-tor-filter, BuriXon-code/Termux2App
+          plugin_repositories_featured:  BuriXon-code/Termux-WiFi-map, BuriXon-code/HexSh, BuriXon-code/termux-diskspeed, BuriXon-code/Termux-GPS-tracker, BuriXon-code/termux-login, BuriXon-code/Termux-SMS-spammer
           # plugin_repositories_affiliations: owner
           # plugin_repositories_batch: 100
           
