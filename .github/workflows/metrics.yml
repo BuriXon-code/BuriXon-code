@@ -54,7 +54,7 @@ jobs:
 
           plugin_repositories: yes
           plugin_repositories_forks: repositories_forks
-          plugin_repositories_featured:  BuriXon-code/Termux-WiFi-map, BuriXon-code/HexSh, BuriXon-code/termux-diskspeed, BuriXon-code/Termux-GPS-tracker, BuriXon-code/termux-login, BuriXon-code/Termux-SMS-spammer
+          plugin_repositories_featured:  BuriXon-code/Termux-WiFi-map, BuriXon-code/spideko, BuriXon-code/typecat, BuriXon-code/Termux-GPS-tracker, BuriXon-code/termux-login, BuriXon-code/micro-retab-plufin
           # plugin_repositories_affiliations: owner
           # plugin_repositories_batch: 100
           
