@@ -11,7 +11,7 @@ on:
           description: {default: 'Start Metrics Workflow'}
           name: {default: 'Metrics for BuriXon-code'}
 jobs:
-  build:
+  metrics:
     runs-on: ubuntu-latest
     steps:
       - uses: stalomeow/metrics@projects-v2
