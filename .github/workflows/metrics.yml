@@ -138,15 +138,15 @@ jobs:
           config_display: large  
             
           plugin_repositories: yes  
-          plugin_repositories_featured: BuriXon-code/Termux-WiFi-map, BuriXon-code/spideko, BuriXon-code/typecat, BuriXon-code/Termux-GPS-tracker, BuriXon-code/termux-login, BuriXon-code/micro-retab-plugin  
+          plugin_repositories_featured: typecat, Termux-WiFi-map, termux-login, HexSh, Termux-GPS-tracker, micro-retab-plugin
 
-  # STARRED REPOS          
-  repo_starred:  
+  # BEST FOR TERMUX          
+  repo_for_termux:  
     runs-on: ubuntu-latest  
     steps:  
       - uses: stalomeow/metrics@projects-v2  
         with:  
-          filename: github-repositories.stared.svg
+          filename: github-repositories.for.termux.svg
           user: BuriXon-code  
           token: ${{ secrets.METRICS_TOKEN }}   
           output_action: commit  
@@ -156,15 +156,15 @@ jobs:
           config_display: large  
             
           plugin_repositories: yes  
-          plugin_repositories_starred: 100
+          plugin_repositories_featured: Termux-WiFi-map, Termux-SMS-spammer, termux-login, FireTor, ADBash, termux-mc
 
-  # RANDOM REPOS        
-  repo_random:  
+  # BEST BASH          
+  repo_for_termux:  
     runs-on: ubuntu-latest  
     steps:  
       - uses: stalomeow/metrics@projects-v2  
         with:  
-          filename: github-repositories.random.svg
+          filename: github-repositories.bash.svg
           user: BuriXon-code  
           token: ${{ secrets.METRICS_TOKEN }}   
           output_action: commit  
@@ -174,7 +174,26 @@ jobs:
           config_display: large  
             
           plugin_repositories: yes  
-          plugin_repositories_random: 100
+          plugin_repositories_featured: Termux-WiFi-map, HexSh, PolyglotSH, ZalgoText, github-traffic, 256colors
+
+  # BEST OTHER LANG          
+  repo_for_termux:  
+    runs-on: ubuntu-latest  
+    steps:  
+      - uses: stalomeow/metrics@projects-v2  
+        with:  
+          filename: github-repositories.other.lang.svg
+          user: BuriXon-code  
+          token: ${{ secrets.METRICS_TOKEN }}   
+          output_action: commit  
+          base: ""  
+          template: classic  
+          config_timezone: Europe/Warsaw  
+          config_display: large  
+            
+          plugin_repositories: yes  
+          plugin_repositories_featured: typecat, spideko, polyglot, php-tor-filter, micro-retab-plugin, micro-burixon-dark
+
 
   # FOLLOWUP
   followup:  
