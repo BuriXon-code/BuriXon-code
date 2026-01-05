@@ -16,7 +16,6 @@ jobs:
     steps:  
       - uses: stalomeow/metrics@projects-v2  
         with:  
-          filename: github-metrics.svg
           user: BuriXon-code  
           token: ${{ secrets.METRICS_TOKEN }}   
           output_action: commit  
@@ -113,7 +112,7 @@ jobs:
     steps:  
       - uses: stalomeow/metrics@projects-v2  
         with:  
-          filename: github-metrics.svg
+          filename: github-repositories.svg
           user: BuriXon-code  
           token: ${{ secrets.METRICS_TOKEN }}   
           output_action: commit  
@@ -146,7 +145,7 @@ jobs:
     steps:  
       - uses: stalomeow/metrics@projects-v2  
         with:  
-          filename: github-metrics.svg
+          filename: github-people.svg
           user: BuriXon-code  
           token: ${{ secrets.METRICS_TOKEN }}   
           output_action: commit  
