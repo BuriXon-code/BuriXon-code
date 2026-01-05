@@ -56,6 +56,20 @@ jobs:
           plugin_people_size: 28  
           plugin_people_types: followers, following  
 
+  header:  
+    runs-on: ubuntu-latest  
+    steps:  
+      - uses: stalomeow/metrics@projects-v2  
+        with:  
+          filename: github-header.svg
+          user: BuriXon-code  
+          token: ${{ secrets.METRICS_TOKEN }}   
+          output_action: commit  
+          template: classic  
+          base: header, activity, community, repositories, metadata  
+          config_timezone: Europe/Warsaw  
+          config_display: large  
+
   achievements:  
     runs-on: ubuntu-latest  
     steps:  
