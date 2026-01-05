@@ -73,7 +73,7 @@ jobs:
   achievements:  
     runs-on: ubuntu-latest  
     steps:  
-      - uses: stalomeow/metrics@projects-v2  
+      - uses: burixon-code/metrics@v1.0.0  
         with:  
           filename: github-achievements.svg
           user: BuriXon-code  
