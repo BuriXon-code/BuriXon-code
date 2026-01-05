@@ -66,7 +66,7 @@ jobs:
           token: ${{ secrets.METRICS_TOKEN }}   
           output_action: commit  
           template: classic  
-          base: header, activity, community, repositories, metadata  
+          base: ""  
           config_timezone: Europe/Warsaw  
           config_display: large  
 
@@ -78,7 +78,8 @@ jobs:
           filename: github-achievements.svg
           user: BuriXon-code  
           token: ${{ secrets.METRICS_TOKEN }}   
-          output_action: commit    
+          output_action: commit
+          base: ""       
           plugin_achievements: yes  
           plugin_achievements_display: detailed  
           plugin_achievements_secrets: yes  
@@ -93,6 +94,7 @@ jobs:
           user: BuriXon-code  
           token: ${{ secrets.METRICS_TOKEN }}   
           output_action: commit  
+          base: ""  
           template: classic  
           config_timezone: Europe/Warsaw  
           config_display: large  
@@ -110,6 +112,7 @@ jobs:
           user: BuriXon-code  
           token: ${{ secrets.METRICS_TOKEN }}   
           output_action: commit  
+          base: ""  
           template: classic  
           config_timezone: Europe/Warsaw  
           config_display: large  
@@ -126,6 +129,7 @@ jobs:
           user: BuriXon-code  
           token: ${{ secrets.METRICS_TOKEN }}   
           output_action: commit  
+          base: ""  
           template: classic  
           config_timezone: Europe/Warsaw  
           config_display: large  
@@ -143,6 +147,7 @@ jobs:
           user: BuriXon-code  
           token: ${{ secrets.METRICS_TOKEN }}   
           output_action: commit  
+          base: ""  
           template: classic  
           config_timezone: Europe/Warsaw  
           config_display: large  
@@ -159,6 +164,7 @@ jobs:
           user: BuriXon-code  
           token: ${{ secrets.METRICS_TOKEN }}   
           output_action: commit  
+          base: ""  
           template: classic  
           config_timezone: Europe/Warsaw  
           config_display: large  
