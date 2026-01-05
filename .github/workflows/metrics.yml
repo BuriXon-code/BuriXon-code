@@ -5,7 +5,7 @@ on:
   pull_request:  
     branches: [ main ]  
   schedule:  
-    - cron: '0 */8 * * *'  
+    - cron: '0 */6 * * *'  
   workflow_dispatch:  
       inputs:  
           description: {default: 'Start Metrics Workflow'}  
@@ -16,6 +16,7 @@ jobs:
     steps:  
       - uses: stalomeow/metrics@projects-v2  
         with:  
+          filename: github-metrics.svg
           user: BuriXon-code  
           token: ${{ secrets.METRICS_TOKEN }}   
           output_action: commit  
