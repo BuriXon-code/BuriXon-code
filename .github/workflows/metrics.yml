@@ -159,7 +159,7 @@ jobs:
           plugin_repositories_featured: Termux-WiFi-map, Termux-SMS-spammer, termux-login, FireTor, ADBash, termux-mc
 
   # BEST BASH          
-  repo_for_termux:  
+  repo_bash:  
     runs-on: ubuntu-latest  
     steps:  
       - uses: stalomeow/metrics@projects-v2  
@@ -177,7 +177,7 @@ jobs:
           plugin_repositories_featured: Termux-WiFi-map, HexSh, PolyglotSH, ZalgoText, github-traffic, 256colors
 
   # BEST OTHER LANG          
-  repo_for_termux:  
+  repo_other_lang:  
     runs-on: ubuntu-latest  
     steps:  
       - uses: stalomeow/metrics@projects-v2  
