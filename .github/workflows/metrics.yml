@@ -164,7 +164,7 @@ jobs:
     steps:  
       - uses: lowlighter/metrics@latest  
         with:  
-          filename: main-pagespeed.svg  
+          filename: github-main.pagespeed.svg  
           token: NOT_NEEDED  
           base: ""  
           plugin_pagespeed: yes  
