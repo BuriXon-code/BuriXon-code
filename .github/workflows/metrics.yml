@@ -194,52 +194,52 @@ jobs:
           plugin_repositories: yes  
           plugin_repositories_featured: micro-burixon-dark, micro-retab-plugin, php-tor-filter, polyglot, spideko, typecat
 
-
-  # FOLLOWUP
-  followup:  
-    runs-on: ubuntu-latest  
-    steps:  
-      - uses: stalomeow/metrics@projects-v2  
-        with:  
-          filename: github-followup.svg
-          user: BuriXon-code  
-          token: ${{ secrets.METRICS_TOKEN }}   
-          output_action: commit  
-          base: ""  
-          template: classic  
-          config_timezone: Europe/Warsaw  
-          config_display: large  
-            
-          plugin_followup: yes  
-          plugin_followup_sections: repositories  
-
-  # PEOPLE
-  people:  
-    runs-on: ubuntu-latest  
-    steps:  
-      - uses: stalomeow/metrics@projects-v2  
-        with:  
-          filename: github-people.svg
-          user: BuriXon-code  
-          token: ${{ secrets.METRICS_TOKEN }}   
-          output_action: commit  
-          base: ""  
-          template: classic  
-          config_timezone: Europe/Warsaw  
-          config_display: large  
-            
-          plugin_people: yes  
-          plugin_people_limit: 16  
-          plugin_people_size: 28  
-          plugin_people_types: followers, following  
-
   # PAGESPEED
-  pagespeed:  
+  main-speed:  
     runs-on: ubuntu-latest  
     steps:  
       - uses: lowlighter/metrics@latest  
         with:  
           filename: github-main.pagespeed.svg  
+          token: NOT_NEEDED  
+          base: ""  
+          plugin_pagespeed: yes  
+          plugin_pagespeed_token: ${{ secrets.PAGESPEED_TOKEN }}  
+          plugin_pagespeed_url: https://burixon.dev/
+
+  # PAGESPEED
+  proj-speed:  
+    runs-on: ubuntu-latest  
+    steps:  
+      - uses: lowlighter/metrics@latest  
+        with:  
+          filename: github-projects.pagespeed.svg  
+          token: NOT_NEEDED  
+          base: ""  
+          plugin_pagespeed: yes  
+          plugin_pagespeed_token: ${{ secrets.PAGESPEED_TOKEN }}  
+          plugin_pagespeed_url: https://burixon.dev/
+
+  # PAGESPEED
+  blog-speed:  
+    runs-on: ubuntu-latest  
+    steps:  
+      - uses: lowlighter/metrics@latest  
+        with:  
+          filename: github-blog.pagespeed.svg  
+          token: NOT_NEEDED  
+          base: ""  
+          plugin_pagespeed: yes  
+          plugin_pagespeed_token: ${{ secrets.PAGESPEED_TOKEN }}  
+          plugin_pagespeed_url: https://burixon.dev/
+
+  # PAGESPEED
+  test-speed:  
+    runs-on: ubuntu-latest  
+    steps:  
+      - uses: lowlighter/metrics@latest  
+        with:  
+          filename: github-test.speed.pagespeed.svg  
           token: NOT_NEEDED  
           base: ""  
           plugin_pagespeed: yes  
