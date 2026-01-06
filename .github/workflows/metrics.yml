@@ -218,7 +218,7 @@ jobs:
           base: ""  
           plugin_pagespeed: yes  
           plugin_pagespeed_token: ${{ secrets.PAGESPEED_TOKEN }}  
-          plugin_pagespeed_url: https://burixon.dev/
+          plugin_pagespeed_url: https://burixon.dev/projects/
 
   # PAGESPEED
   blog-speed:  
@@ -231,7 +231,7 @@ jobs:
           base: ""  
           plugin_pagespeed: yes  
           plugin_pagespeed_token: ${{ secrets.PAGESPEED_TOKEN }}  
-          plugin_pagespeed_url: https://burixon.dev/
+          plugin_pagespeed_url: https://burixon.dev/blog/
 
   # PAGESPEED
   test-speed:  
@@ -244,4 +244,4 @@ jobs:
           base: ""  
           plugin_pagespeed: yes  
           plugin_pagespeed_token: ${{ secrets.PAGESPEED_TOKEN }}  
-          plugin_pagespeed_url: https://burixon.dev/
+          plugin_pagespeed_url: https://burixon.dev/test.php
