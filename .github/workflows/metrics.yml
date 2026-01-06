@@ -38,7 +38,7 @@ jobs:
           plugin_isocalendar_duration: half-year  
           # REPOSITORIES
           plugin_repositories: yes  
-          plugin_repositories_featured: BuriXon-code/Termux-WiFi-map, BuriXon-code/spideko, BuriXon-code/typecat, BuriXon-code/Termux-GPS-tracker, BuriXon-code/termux-login, BuriXon-code/micro-retab-plugin  
+          plugin_repositories_featured: micro-retab-plugin, spideko, Termux-GPS-tracker, Termux-WiFi-map, termux-login, typecat
           # HABITS              
           plugin_habits: yes
           plugin_habits_facts: yes
@@ -138,7 +138,7 @@ jobs:
           config_display: large  
             
           plugin_repositories: yes  
-          plugin_repositories_featured: typecat, Termux-WiFi-map, termux-login, HexSh, Termux-GPS-tracker, micro-retab-plugin
+          plugin_repositories_featured: HexSh, micro-retab-plugin, Termux-GPS-tracker, Termux-WiFi-map, termux-login, typecat
 
   # BEST FOR TERMUX          
   repo_for_termux:  
@@ -156,7 +156,7 @@ jobs:
           config_display: large  
             
           plugin_repositories: yes  
-          plugin_repositories_featured: Termux-WiFi-map, Termux-SMS-spammer, termux-login, FireTor, ADBash, termux-mc
+          plugin_repositories_featured: ADBash, FireTor, Termux-SMS-spammer, Termux-WiFi-map, termux-login, termux-mc
 
   # BEST BASH          
   repo_bash:  
@@ -174,7 +174,7 @@ jobs:
           config_display: large  
             
           plugin_repositories: yes  
-          plugin_repositories_featured: Termux-WiFi-map, HexSh, PolyglotSH, ZalgoText, github-traffic, 256colors
+          plugin_repositories_featured: 256colors, github-traffic, HexSh, PolyglotSH, Termux-WiFi-map, ZalgoText
 
   # BEST OTHER LANG          
   repo_other_lang:  
@@ -192,7 +192,7 @@ jobs:
           config_display: large  
             
           plugin_repositories: yes  
-          plugin_repositories_featured: typecat, spideko, polyglot, php-tor-filter, micro-retab-plugin, micro-burixon-dark
+          plugin_repositories_featured: micro-burixon-dark, micro-retab-plugin, php-tor-filter, polyglot, spideko, typecat
 
 
   # FOLLOWUP
