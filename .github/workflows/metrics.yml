@@ -1,4 +1,4 @@
-name: Metrics  
+name: Metrics
 on:  
   push:  
     branches: [ main ]  
