@@ -32,7 +32,7 @@ jobs:
           # LANGUAGES  
           plugin_languages: yes  
           plugin_languages_colors: github  
-          plugin_languages_threshold: 0.1  
+          plugin_languages_threshold: 0.01
           # COMMIT CALENDAR  
           plugin_isocalendar: yes  
           plugin_isocalendar_duration: half-year  
@@ -102,7 +102,7 @@ jobs:
 
           plugin_languages: yes  
           plugin_languages_colors: github  
-          plugin_languages_threshold: 0.1  
+          plugin_languages_threshold: 0.01  
 
   # COMMIT CALENDAR
   isocalendar:  
@@ -138,7 +138,7 @@ jobs:
           config_display: large  
             
           plugin_repositories: yes  
-          plugin_repositories_featured: HexSh, micro-retab-plugin, Termux-GPS-tracker, Termux-WiFi-map, termux-login, typecat
+          plugin_repositories_featured: HexSh, micro-retab-plugin, TrashRecover, Termux-WiFi-map, mouse-tool, typecat
 
   # BEST FOR TERMUX          
   repo_for_termux:  
@@ -156,7 +156,7 @@ jobs:
           config_display: large  
             
           plugin_repositories: yes  
-          plugin_repositories_featured: ADBash, FireTor, Termux-SMS-spammer, Termux-WiFi-map, termux-login, termux-mc
+          plugin_repositories_featured: ADBash, FireTor, TrashRecover, Termux-WiFi-map, termux-login, termux-mc
 
   # BEST BASH          
   repo_bash:  
@@ -192,7 +192,7 @@ jobs:
           config_display: large  
             
           plugin_repositories: yes  
-          plugin_repositories_featured: micro-burixon-dark, micro-retab-plugin, php-tor-filter, polyglot, spideko, typecat
+          plugin_repositories_featured: micro-burixon-dark, micro-retab-plugin, mouse-tool, polyglot, spideko, typecat
 
   # PAGESPEED
   main-speed:  
