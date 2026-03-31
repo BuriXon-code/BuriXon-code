@@ -38,7 +38,7 @@ jobs:
           plugin_isocalendar_duration: half-year  
           # REPOSITORIES
           plugin_repositories: yes  
-          plugin_repositories_featured: micro-retab-plugin, spideko, Termux-GPS-tracker, Termux-WiFi-map, termux-login, typecat
+          plugin_repositories_featured: micro-retab-plugin, spideko, mod_doscontrol, Termux-WiFi-map, termux-login, typecat
           # HABITS              
           plugin_habits: yes
           plugin_habits_facts: yes
