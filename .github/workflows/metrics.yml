@@ -159,7 +159,7 @@ jobs:
           plugin_repositories_featured: ADBash, FireTor, TrashRecover, Termux-WiFi-map, termux-login, termux-mc
           
   # BEST FOR MICRO          
-  repo_for_termux:  
+  repo_for_micro:  
     runs-on: ubuntu-latest  
     steps:  
       - uses: stalomeow/metrics@projects-v2  
