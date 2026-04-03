@@ -157,6 +157,24 @@ jobs:
             
           plugin_repositories: yes  
           plugin_repositories_featured: ADBash, FireTor, TrashRecover, Termux-WiFi-map, termux-login, termux-mc
+          
+  # BEST FOR MICRO          
+  repo_for_termux:  
+    runs-on: ubuntu-latest  
+    steps:  
+      - uses: stalomeow/metrics@projects-v2  
+        with:  
+          filename: github-repositories.for.micro.svg
+          user: BuriXon-code  
+          token: ${{ secrets.METRICS_TOKEN }}   
+          output_action: commit  
+          base: ""  
+          template: classic  
+          config_timezone: Europe/Warsaw  
+          config_display: large  
+            
+          plugin_repositories: yes  
+          plugin_repositories_featured: micro-burixon-dark, micro-retab-plugin, micro-translate-plugin
 
   # BEST BASH          
   repo_bash:  
