@@ -505,7 +505,7 @@
                                     </svg>
                                     <div class="name">
                                         <span>BuriXon-code/mod_doscontrol</span>
-                                        <span>created 27 days ago</span>
+                                        <span>created 28 days ago</span>
                                     </div>
                                 </div>
                                 <div class="field description">A module for Apache2.4 that detects DoS attacks, spam, floods, triggers additional security measures, and notifications.</div>
@@ -2212,7 +2212,7 @@
                                 <div class="title">
                                     <span class="prefix"></span>
                                     Maintainer
-                                    <span class="gh">ranked 2.93m out of 313m repositories</span>
+                                    <span class="gh">ranked 2.94m out of 313m repositories</span>
                                 </div>
                                 <div class="text">Maintaining a repository with 8 stars</div>
                             </div>
@@ -2300,7 +2300,7 @@
             </section>
             <footer>
                 <span>These metrics include private contributions</span>
-                <span>Last updated 25 Apr 2026, 04:59:23 (timezone Europe/Warsaw) with lowlighter/metrics@3.35.0-beta</span>
+                <span>Last updated 25 Apr 2026, 15:21:06 (timezone Europe/Warsaw) with lowlighter/metrics@3.35.0-beta</span>
             </footer>
         </div>
         <div xmlns="http://www.w3.org/1999/xhtml" id="metrics-end"></div>
